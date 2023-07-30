@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'estudo-angular';
+
+  userName: string = 'John Doe';
 }

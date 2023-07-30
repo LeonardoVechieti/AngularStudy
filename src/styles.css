@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* Cria um reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cria uma fonte padrão para o projeto */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Primary button */
+button {
+    cursor: pointer;
+    background: #7159c1;
+    border: 0;
+    padding: 0 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 36px;
+}
+
+/* Teg a */
+a {
+    text-decoration: none;
+    color: #7159c1;
+}
+a:hover {
+    color: #4c3b83;
+}
+
