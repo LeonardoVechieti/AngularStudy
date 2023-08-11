@@ -8,6 +8,7 @@
 /* Cria uma fonte padrão para o projeto */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 500px;
 }
 /* Primary button */
 button {
@@ -30,4 +31,26 @@ a {
 a:hover {
     color: #4c3b83;
 }
+
+.class {
+  border-bottom: 1px solid #0d0c0c;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+/* Estilo para um input */
+input {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    width: auto;
+    margin: 5px;
+}
+input:hover {
+    border: 1px solid #7159c1;
+}
+
+
+
 

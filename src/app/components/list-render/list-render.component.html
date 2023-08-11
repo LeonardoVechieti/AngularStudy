@@ -1,0 +1,8 @@
+<div class="class">
+    <!-- Renderiza a lista de animals -->
+    <div *ngFor="let animal of animals">
+        <h2 class="card-title">{{animal.name}} + {{animal.sound}} + {{animal.age}}</h2>
+        <button (click)="showAge(animal)">Show Age</button>
+    </div>
+    
+</div>

@@ -1,0 +1,12 @@
+<div class="class">
+    
+    <!-- Botão que altera a condicional -->
+    <button (click)="canShow = !canShow">Alterar condicional</button>
+    <p *ngIf="canShow">Paragrafo com condicional:</p>
+
+    <h2 *ngIf="canShow; else titleTwo">Titulo One</h2>
+    <ng-template #titleTwo>
+        <h2>Titulo Two</h2>
+    </ng-template>
+</div>
+
