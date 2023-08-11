@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Animal } from 'src/app/models/Animal';
+import { ListService } from 'src/app/service/list.service';
 @Component({
   selector: 'app-list-render',
   templateUrl: './list-render.component.html',
@@ -12,7 +13,7 @@ export class ListRenderComponent {
     { name: 'Cow', sound: 'Moo!', age: 10 },
     { name: 'Fox', sound: 'Wa-pa-pa-pa-pa-pa-pow!', age: 1 },
   ];
-  constructor() { }
+  constructor(private listService: ListService) { }
 
   showAge(animal: Animal) {
     this.animals.forEach((a) => {
@@ -21,6 +22,10 @@ export class ListRenderComponent {
       }
     }
     );
+  }
+
+  removeAnimal(animal: Animal) {
+    this.animals = this.listService.remove(this.animals, animal);
   }
 
 
