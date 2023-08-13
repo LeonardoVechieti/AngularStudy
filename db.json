@@ -1,0 +1,40 @@
+{
+    "animals": [
+        {   
+            "id": 1,
+            "name": "cat",
+            "sound": "mammal",
+            "age": 5
+        },
+        {
+            "id": 2,
+            "name": "dog",
+            "sound": "mammal",
+            "age": 10
+        },
+        {
+            "id": 3,
+            "name": "snake",
+            "sound": "reptile",
+            "age": 1
+        },
+        {   
+            "id": 4,
+            "name": "lizard",
+            "sound": "reptile",
+            "age": 2
+        },
+        {
+            "id": 5,
+            "name": "fish",
+            "sound": "fish",
+            "age": 1
+        },
+        {
+            "id": 6,
+            "name": "bird",
+            "sound": "bird",
+            "age": 3
+        }
+    ]
+}

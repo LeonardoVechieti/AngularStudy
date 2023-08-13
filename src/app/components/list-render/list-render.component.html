@@ -1,9 +1,14 @@
 <div class="class">
     <!-- Renderiza a lista de animals -->
     <div *ngFor="let animal of animals">
-        <h2 class="card-title">{{animal.name}} + {{animal.sound}} + {{animal.age}}</h2>
+        <h2 class="card-title">
+            <!-- Link para a pagina de tetalhes -->
+            <a routerLink="/list/{{animal.id}}">
+                {{animal.name}} + {{animal.sound}} + {{animal.age}}
+            </a>
+        </h2>
         <button (click)="showAge(animal)">Show Age</button>
         <button (click)="removeAnimal(animal)">Excluir</button>
     </div>
-    
+
 </div>
